@@ -24,5 +24,16 @@ namespace XReminder
         {
             InitializeComponent();
         }
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            this.Content = mainWindow;
+        }
+        private void AbbrechenButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            this.Content = mainWindow;
+        }
     }
 }

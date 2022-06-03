@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace XReminder
 {
     /// <summary>
@@ -23,6 +24,17 @@ namespace XReminder
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            Page3 page3 = new Page3();
+            this.Content = page3;
+        }
+        private void DetailButton_Click(object sender, RoutedEventArgs e)
+        {
+            Page1 page1 = new Page1();
+            this.Content = page1;
         }
     }
 }

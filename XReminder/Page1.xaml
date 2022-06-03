@@ -64,7 +64,7 @@
                 <ColumnDefinition Width="50"></ColumnDefinition>
                 <ColumnDefinition Width="20"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Width="50" Height="50" Background="{StaticResource backIcon}">
+            <Button Grid.Column="0" Width="50" Height="50" Background="{StaticResource backIcon}" Click="BackButton_Click">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="25"></Setter>

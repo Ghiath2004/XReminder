@@ -24,5 +24,11 @@ namespace XReminder
         {
             InitializeComponent();
         }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            this.Content = mainWindow;
+        }
     }
 }

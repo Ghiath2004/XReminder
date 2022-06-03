@@ -69,8 +69,8 @@
                 <TextBox Grid.Row="6" Grid.Column="2" Height="30" Text=""/>
                 <TextBlock Grid.Row="8" Grid.Column="0" TextAlignment="Left" FontSize="15" Text="Kategorie" Foreground="#ffffff"/>
                 <TextBox Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="3" Height="140" Text=""/>
-                <Button Grid.Row="11" Grid.Column="0" Height="40" Background="#ffffff" Foreground="#222222" Content="Abbrechen"></Button>
-                <Button Grid.Row="11" Grid.Column="2" Height="40" Background="#ffffff" Foreground="#222222" Content="Erfassen"></Button>
+                <Button Grid.Row="11" Grid.Column="0" Height="40" Background="#ffffff" Foreground="#222222" Content="Abbrechen" Click="AbbrechenButton_Click"></Button>
+                <Button Grid.Row="11" Grid.Column="2" Height="40" Background="#ffffff" Foreground="#222222" Content="Erfassen" Click="AddButton_Click"></Button>
             </Grid>
         </UniformGrid>
     </Grid>
