@@ -26,6 +26,7 @@
 
         <ImageBrush x:Key="greenCheckIcon" ImageSource="https://gosler-und-chorbball.lebenssprache.ch/projektIcons/greenCheckIcon.png"></ImageBrush>
     </Page.Resources>
+   
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="60"></RowDefinition>
@@ -42,15 +43,29 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="40"></RowDefinition>
                     <RowDefinition Height="20"></RowDefinition>
-                    <RowDefinition Height="10"></RowDefinition>
-                    <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                    <ColumnDefinition Width="20"></ColumnDefinition>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <TextBlock Grid.Row="0" Grid.Column="0" TextAlignment="Left" FontSize="30" Text="Auto waschen" Foreground="#ffffff"/>
-                <TextBlock Grid.Row="1" Grid.Column="0" TextAlignment="Left" VerticalAlignment="Bottom" FontSize="15" Text="03.06.2022" Foreground="#ffffff"></TextBlock>
-                <TextBlock Grid.Row="3" Grid.Column="0" TextAlignment="Left" FontSize="15" Text="Auto waschen und Staubsaugen" Foreground="#ffffff"></TextBlock>
+                <TextBlock Grid.Row="1" Grid.Column="0" TextAlignment="Left" VerticalAlignment="Bottom" FontSize="15" Text="03.06.2022 - Auto waschen und Staubsaugen" Foreground="#ffffff"></TextBlock>
+                <Button Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Width="50" Height="50" Background="{StaticResource checkIcon}">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"></Setter>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button Grid.Row="0" Grid.Column="3" Grid.RowSpan="2" Width="50" Height="50" Background="{StaticResource suchIcon}">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"></Setter>
+                        </Style>
+                    </Button.Resources>
+                </Button>
             </Grid>
         </UniformGrid>
         <Grid Grid.Row="2" HorizontalAlignment="Right">
@@ -59,33 +74,15 @@
                 <ColumnDefinition Width="20"></ColumnDefinition>
                 <ColumnDefinition Width="50"></ColumnDefinition>
                 <ColumnDefinition Width="20"></ColumnDefinition>
-                <ColumnDefinition Width="50"></ColumnDefinition>
-                <ColumnDefinition Width="20"></ColumnDefinition>
-                <ColumnDefinition Width="50"></ColumnDefinition>
-                <ColumnDefinition Width="20"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Width="50" Height="50" Background="{StaticResource backIcon}">
+            <Button Grid.Column="0" Width="50" Height="50" Background="{StaticResource checkAllIcon}">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="25"></Setter>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Grid.Column="2" Width="50" Height="50" Background="{StaticResource trashIcon}">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="25"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button Grid.Column="4" Width="50" Height="50" Background="{StaticResource checkIcon}">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="25"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button Grid.Column="6" Width="50" Height="50" Background="{StaticResource editIcon}">
+            <Button Grid.Column="2" Width="50" Height="50" Background="{StaticResource addIcon}">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="25"></Setter>

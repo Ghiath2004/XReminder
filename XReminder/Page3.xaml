@@ -41,67 +41,37 @@
             <Grid Margin="20" HorizontalAlignment="Stretch" VerticalAlignment="Top">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
                     <RowDefinition Height="10"></RowDefinition>
                     <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="10"></RowDefinition>
                     <RowDefinition Height="20"></RowDefinition>
-                    <RowDefinition Height="20"></RowDefinition>
-                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="150"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="20"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Row="0" Grid.Column="0" TextAlignment="Left" FontSize="30" Text="Aufgabe bearbeiten" Foreground="#ffffff"/>
-                <TextBlock Grid.Row="1" Grid.Column="0" TextAlignment="Left" FontSize="25" Text="Titel" Foreground="#ffffff"/>
-                <TextBox Grid.Row="2" Grid.Column="0" PlaceholderText="Hausaufgaben"/>
-                <TextBlock Grid.Row="1" Grid.Column="1" TextAlignment="Left" FontSize="25" Text="Datum bis" Foreground="#ffffff"/>
-                <TextBox Grid.Row="2" Grid.Column="1" PlaceholderText="27.05.2022"/>
-                <TextBlock Grid.Row="3" Grid.Column="0" TextAlignment="Left" FontSize="25" Text="Priorität" Foreground="#ffffff"/>
-                <TextBox Grid.Row="4" Grid.Column="0" PlaceholderText="1"/>
-                <TextBlock Grid.Row="3" Grid.Column="1" TextAlignment="Left" FontSize="25" Text="Kategorie" Foreground="#ffffff"/>
-                <TextBox Grid.Row="3" Grid.Column="1" PlaceholderText="Schule"/>
-                
-
+                <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" TextAlignment="Left" FontSize="30" Text="Aufgabe bearbeiten" Foreground="#ffffff"/>
+                <TextBlock Grid.Row="2" Grid.Column="0" TextAlignment="Left" FontSize="15" Text="Titel" Foreground="#ffffff"/>
+                <TextBox Grid.Row="3" Grid.Column="0" Height="30" Text=""/>
+                <TextBlock Grid.Row="2" Grid.Column="2" TextAlignment="Left" FontSize="15" Text="Datum bis" Foreground="#ffffff"/>
+                <TextBox Grid.Row="3" Grid.Column="2" Height="30" Text=""/>
+                <TextBlock Grid.Row="5" Grid.Column="0" TextAlignment="Left" FontSize="15" Text="Priorität" Foreground="#ffffff"/>
+                <TextBox Grid.Row="6" Grid.Column="0" Height="30" Text=""/>
+                <TextBlock Grid.Row="5" Grid.Column="2" TextAlignment="Left" FontSize="15" Text="Kategorie" Foreground="#ffffff"/>
+                <TextBox Grid.Row="6" Grid.Column="2" Height="30" Text=""/>
+                <TextBlock Grid.Row="8" Grid.Column="0" TextAlignment="Left" FontSize="15" Text="Kategorie" Foreground="#ffffff"/>
+                <TextBox Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="3" Height="140" Text=""/>
+                <Button Grid.Row="11" Grid.Column="0" Height="40" Background="#ffffff" Foreground="#222222" Content="Abbrechen"></Button>
+                <Button Grid.Row="11" Grid.Column="2" Height="40" Background="#ffffff" Foreground="#222222" Content="Erfassen"></Button>
             </Grid>
         </UniformGrid>
-        <Grid Grid.Row="2" HorizontalAlignment="Right">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="50"></ColumnDefinition>
-                <ColumnDefinition Width="20"></ColumnDefinition>
-                <ColumnDefinition Width="50"></ColumnDefinition>
-                <ColumnDefinition Width="20"></ColumnDefinition>
-                <ColumnDefinition Width="50"></ColumnDefinition>
-                <ColumnDefinition Width="20"></ColumnDefinition>
-                <ColumnDefinition Width="50"></ColumnDefinition>
-                <ColumnDefinition Width="20"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Width="50" Height="50" Background="{StaticResource backIcon}">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="25"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button Grid.Column="2" Width="50" Height="50" Background="{StaticResource trashIcon}">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="25"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button Grid.Column="4" Width="50" Height="50" Background="{StaticResource checkIcon}">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="25"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button Grid.Column="6" Width="50" Height="50" Background="{StaticResource editIcon}">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="25"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
-        </Grid>
     </Grid>
 </Page>
