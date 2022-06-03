@@ -41,16 +41,26 @@
             <Grid Margin="20" HorizontalAlignment="Stretch" VerticalAlignment="Top">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="40"></RowDefinition>
-                    <RowDefinition Height="20"></RowDefinition>
                     <RowDefinition Height="10"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Row="0" Grid.Column="0" TextAlignment="Left" FontSize="30" Text="Auto waschen" Foreground="#ffffff"/>
-                <TextBlock Grid.Row="1" Grid.Column="0" TextAlignment="Left" VerticalAlignment="Bottom" FontSize="15" Text="03.06.2022" Foreground="#ffffff"></TextBlock>
-                <TextBlock Grid.Row="3" Grid.Column="0" TextAlignment="Left" FontSize="15" Text="Auto waschen und Staubsaugen" Foreground="#ffffff"></TextBlock>
+                <TextBlock Grid.Row="0" Grid.Column="0" TextAlignment="Left" FontSize="30" Text="Aufgabe bearbeiten" Foreground="#ffffff"/>
+                <TextBlock Grid.Row="1" Grid.Column="0" TextAlignment="Left" FontSize="25" Text="Titel" Foreground="#ffffff"/>
+                <TextBox Grid.Row="2" Grid.Column="0" PlaceholderText="Hausaufgaben"/>
+                <TextBlock Grid.Row="1" Grid.Column="1" TextAlignment="Left" FontSize="25" Text="Datum bis" Foreground="#ffffff"/>
+                <TextBox Grid.Row="2" Grid.Column="1" PlaceholderText="27.05.2022"/>
+                <TextBlock Grid.Row="3" Grid.Column="0" TextAlignment="Left" FontSize="25" Text="Priorität" Foreground="#ffffff"/>
+                <TextBox Grid.Row="4" Grid.Column="0" PlaceholderText="1"/>
+                <TextBlock Grid.Row="3" Grid.Column="1" TextAlignment="Left" FontSize="25" Text="Kategorie" Foreground="#ffffff"/>
+                <TextBox Grid.Row="3" Grid.Column="1" PlaceholderText="Schule"/>
+                
+
             </Grid>
         </UniformGrid>
         <Grid Grid.Row="2" HorizontalAlignment="Right">
