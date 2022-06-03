@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:XReminder"
         mc:Ignorable="d"
-        Title="MainWindow" Height="730" Width="700" Background="#333333">
+        Title="Aufgaben" Height="730" Width="700" Background="#333333">
     <Window.Resources>
         <ImageBrush x:Key="addIcon" ImageSource="https://gosler-und-chorbball.lebenssprache.ch/projektIcons/plusIcon.png"></ImageBrush>
         <ImageBrush x:Key="suchIcon" ImageSource="https://gosler-und-chorbball.lebenssprache.ch/projektIcons/suchIcon.png"></ImageBrush>
@@ -14,6 +14,16 @@
         <ImageBrush x:Key="trashIcon" ImageSource="https://gosler-und-chorbball.lebenssprache.ch/projektIcons/trashIcon.png"></ImageBrush>
         <ImageBrush x:Key="backIcon" ImageSource="https://gosler-und-chorbball.lebenssprache.ch/projektIcons/backIcon.png"></ImageBrush>
         <ImageBrush x:Key="checkAllIcon" ImageSource="https://gosler-und-chorbball.lebenssprache.ch/projektIcons/checkAllIcon.png"></ImageBrush>
+
+        <ImageBrush x:Key="addIcon_checked" ImageSource="https://gosler-und-chorbball.lebenssprache.ch/projektIcons/plusIcon_checked.png"></ImageBrush>
+        <ImageBrush x:Key="suchIcon_checked" ImageSource="https://gosler-und-chorbball.lebenssprache.ch/projektIcons/suchIcon_checked.png"></ImageBrush>
+        <ImageBrush x:Key="checkIcon_checked" ImageSource="https://gosler-und-chorbball.lebenssprache.ch/projektIcons/checkIcon_checked.png"></ImageBrush>
+        <ImageBrush x:Key="editIcon_checked" ImageSource="https://gosler-und-chorbball.lebenssprache.ch/projektIcons/editIcon_checked.png"></ImageBrush>
+        <ImageBrush x:Key="trashIcon_checked" ImageSource="https://gosler-und-chorbball.lebenssprache.ch/projektIcons/trashIcon_checked.png"></ImageBrush>
+        <ImageBrush x:Key="backIcon_checked" ImageSource="https://gosler-und-chorbball.lebenssprache.ch/projektIcons/backIcon_checked.png"></ImageBrush>
+        <ImageBrush x:Key="checkAllIcon_checked" ImageSource="https://gosler-und-chorbball.lebenssprache.ch/projektIcons/checkAllIcon_checked.png"></ImageBrush>
+
+        <ImageBrush x:Key="greenCheckIcon" ImageSource="https://gosler-und-chorbball.lebenssprache.ch/projektIcons/greenCheckIcon.png"></ImageBrush>
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
